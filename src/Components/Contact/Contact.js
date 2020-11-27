@@ -6,7 +6,7 @@ function Contact() {
     <section className="mt-5 bg-green" >
     <div className="container" >
       <div className="row " >
-        <form method="POST" data-netlify="true" className="col-lg-12">
+        <form method="POST" data-netlify="true" name="contact" className="col-lg-12">
           <div className="card p-4  bg-light">
           <h3 className="card-title text-center text-warning">Get In Touch</h3>
             <div className="card-body">
