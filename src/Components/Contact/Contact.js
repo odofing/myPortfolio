@@ -1,51 +1,59 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-
-function Contact() {
-    return (
-    <section className="mt-5 bg-green" >
-    <div className="container" >
-      <div className="row " >
-        <form method="post" name="contact" className="col-lg-12" data-netlify="true" data-netlify-honeypot="bot-field" >
-          <div className="card p-4  bg-light">
-          <h3 className="card-title text-center text-warning">Get In Touch</h3>
-            <div className="card-body">
-             
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="form-group">
-                 <input type="text" className="form-control" id="Name" placeholder="Name" required/>
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <input type="email"className="form-control" name="e-mail" id="email" placeholder="Email" required/>
-                  </div>
-                </div>
-                </div> 
-              </div>
-              
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <textarea className="form-control" id="instructions" placeholder="Message" required></textarea>
-                  </div>
-                </div>
-               
-              <div className="col-lg-12" id="field">
-                  <div data-netlify-recaptcha="true" className="form-group">
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <button type="submit" className="btn btn-warning btn-block text-dark">SUBMIT </button>
-                  </div>
-                </div>
-            </div>
-        </form>
-      </div>
-      </div>
-  </section>
-    )
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
 }
 
-export default Contact;
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    );
+  }
+}
+
+export default ContactForm;
