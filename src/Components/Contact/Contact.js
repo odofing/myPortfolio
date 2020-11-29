@@ -1,47 +1,78 @@
-import React from 'react';
+import React from 'react'
 
 
-function Contact() {
-    return (
-    <section className="mt-5 bg-green" >
-    <div className="container" >
-      <div className="row " >
-        <form action="/contact" method="post" name="contact" className="col-lg-12">
-        <input type="hidden" name="contact" value="contact" />
-          <div className="card p-4  bg-light">
-          <h3 className="card-title text-center text-warning">Get In Touch</h3>
-            <div className="card-body">
-             
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="form-group">
-                 <input type="text" className="form-control" placeholder="Name" name="name" required/>
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <input type="email"className="form-control" name="e-mail" placeholder="Email" required/>
-                  </div>
-                </div>
-                </div> 
-              </div>
-              
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <textarea className="form-control" name="message" placeholder="Message" required></textarea>
-                  </div>
-                </div>
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <button type="submit" className="btn btn-warning btn-block text-dark">SUBMIT </button>
-                  </div>
-                </div>
-            </div>
-        </form>
-      </div>
-      </div>
-  </section>
-    )
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
-export default Contact;
+export default function Contact() {
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => alert(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
+
+  return (
+   
+     
+      <form
+     
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your name:
+            <br />
+            <input type="text" name="name" onChange={handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your email:
+            <br />
+            <input type="email" name="email" onChange={handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:
+            <br />
+            <textarea name="message" onChange={handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+  )
+}
+
