@@ -15,12 +15,12 @@ function Contact() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="form-group">
-                 <input type="text" className="form-control" id="Name" placeholder="Name" required/>
+                 <input type="text" className="form-control" placeholder="Name" name="name" required/>
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <input type="email"className="form-control" name="e-mail" id="email" placeholder="Email" required/>
+                    <input type="email"className="form-control" name="e-mail" placeholder="Email" required/>
                   </div>
                 </div>
                 </div> 
@@ -28,7 +28,7 @@ function Contact() {
               
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <textarea className="form-control" id="instructions" placeholder="Message" required></textarea>
+                    <textarea className="form-control" name="message" placeholder="Message" required></textarea>
                   </div>
                 </div>
                
