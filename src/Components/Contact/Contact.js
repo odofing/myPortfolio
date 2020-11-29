@@ -6,7 +6,7 @@ function Contact() {
     <section className="mt-5 bg-green" >
     <div className="container" >
       <div className="row " >
-        <form method="POST" data-netlify="true" name="contact" className="col-lg-12">
+        <form method="POST" data-netlify="true" name="contact" className="col-lg-12" data-netlify-honeypot="bot-field">
           <div className="card p-4  bg-light">
           <h3 className="card-title text-center text-warning">Get In Touch</h3>
             <div className="card-body">
@@ -14,7 +14,7 @@ function Contact() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="form-group">
-                 <input type="text" className="form-control" name="full-name" id="Name" placeholder="Name" required/>
+                 <input type="text" value="Name" className="form-control" name="full-name" id="Name" placeholder="Name" required/>
                   </div>
                 </div>
                 <div className="col-lg-12">
