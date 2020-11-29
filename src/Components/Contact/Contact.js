@@ -1,59 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+const ContactForm = () => (
 
-class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { name: "", email: "", message: "" };
-  }
-
-  /* Here’s the juicy bit for posting the form submission */
-
-  handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    e.preventDefault();
-  };
-
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
-  render() {
-    const { name, email, message } = this.state;
-    return (
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message" value={message} onChange={this.handleChange} />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-    );
-  }
-}
-
+  <NetlifyForm name='Contact' action='/thanks' honeypotName='bot-field'>
+    {({ handleChange, success, error }) => (
+      <>
+        <Honeypot />
+        {success && <p>Thanks for contacting us!</p>}
+        {error && (
+          <p>Sorry, we could not reach our servers. Please try again later.</p>
+        )}
+        <div>
+          <label htmlFor='name'>Name:</label>
+          <input type='text' name='name' id='name' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='message'>Message:</label>
+          <textarea
+            type='text'
+            name='message'
+            id='message'
+            rows='4'
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button type='submit'>Submit</button>
+        </div>
+      </>
+    )}
+  </NetlifyForm>
+)
 export default ContactForm;
