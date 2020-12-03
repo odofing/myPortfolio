@@ -215,15 +215,15 @@ Sidebar
 .close-btn:hover {
   color: var(--clr-red-light);
 }
-.logo {
+
+/* .logo {
   justify-self: center;
   height: 40px;
   font-weight: 700;
   color: yellow;
 
   font-family: 'Roboto', sans-serif;
-}
-
+} */
 
 .links a {
   display: flex;
@@ -248,7 +248,7 @@ Sidebar
   text-decoration: none;
 }
 .links a svg {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   color: var(--clr-light-gold);
   margin-right: 1rem;
   transition: var(--transition);

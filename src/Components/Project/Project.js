@@ -49,7 +49,6 @@ const Project = () => {
                          <img src={image} alt={name} className={classes.personImg}/>
                         
                         <h4>{name}</h4>
-                        <p className={classes.title}>{title}</p>
                         <p className={classes.text}>{quote}</p>
                         <div className="btn">
                         <a href={source} type="button" className="btn btn-outline-warning ">Source Code</a>
@@ -61,11 +60,6 @@ const Project = () => {
                  <button className={classes.prev} onClick={() => setIndex(index - 1)}> <FiChevronLeft /> </button>
                  <button className={classes.next} onClick={() => setIndex(index + 1)}> <FiChevronRight /></button>
              </div>
-             {/* <footer className="footer">
-               <div className="container">
-               <p className="lead">hello world</p>
-               </div>
-                 </footer> */}
            </section>
         )
     }
