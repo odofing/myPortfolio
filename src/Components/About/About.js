@@ -25,9 +25,53 @@ const About = () =>  {
       <div className="col-md-7" id="about">
         <div className="card border-info mb-3 text-center">
        
-          <div className="card-header text-capitalize h3 text-dark"> about me</div>
+          <div className="card-header text-capitalize h3 text-dark"> about</div>
           <div className="card-body text-primary">
-          <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora ratione, sint excepturi quaerat ab eligendi temporibus repellendus inventore odit ex repellat obcaecati dolor harum amet vel animi minima debitis </p>
+          <table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th scope="row">Name:</th>
+      <td>Odofin Gbadamosi Lekan</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Gender:</th>
+      <td>Male</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Age:</th>
+      <td>31</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Degree:</th>
+      <td>M.Sc</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Programming Language:</th>
+      <td>Javascript</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Role:</th>
+      <td>Frontend Web Developer (React)</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Years of Experience:</th>
+      <td>5 years</td>
+    </tr>
+
+    {/* <tr>
+      <th scope="row">Work Mode:</th>
+      <td> Remote or On-site</td>
+    </tr> */}
+
+  </tbody>
+</table>
+          {/* <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora ratione, sint excepturi quaerat ab eligendi temporibus repellendus inventore odit ex repellat obcaecati dolor harum amet vel animi minima debitis </p> */}
     
        <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1605792228/odofin_Gbadamosi_201120_nkxsw4.pdf"> View Résumé</a>  
           </div>
@@ -48,7 +92,7 @@ const About = () =>  {
        <button className="btn p-3"><AiFillGithub style={{color: 'grey', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">github</p> </button> 
             <button className="btn p-3"><FaGit style={{color: 'red', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">git</p> </button>
 
-            <button className="btn p-3"><SiBootstrap style={{color: 'blue', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">bootstrap</p></button>
+            <button className="btn p-3"><SiBootstrap style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">bootstrap</p></button>
             <button className="btn p-3">  <SiJavascript style={{color: 'orange', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">javascript</p></button>
             <button className="btn p-3">  <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">css3</p></button>
             <button className="btn p-3"><DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> <p className="lead pt-3 text-uppercase">npm</p> </button>

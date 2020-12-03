@@ -3,10 +3,11 @@ import { FaTimes, FaHome, FaUser,
   FaFolderOpen, FaBloggerB } from 'react-icons/fa';
   import { MdContactPhone } from 'react-icons/md';
 import {  useGlobalContext } from '../context';
+import Socials from '../Socials';
 import { Link } from 'react-router-dom';
-import { FiMail } from 'react-icons/fi';
-import { FaGithub, FaLinkedin, FaTwitter,  } from 'react-icons/fa';
- import { GrInstagram } from 'react-icons/gr';
+// import { FiMail } from 'react-icons/fi';
+// import { FaGithub, FaLinkedin, FaTwitter,  } from 'react-icons/fa';
+//  import { GrInstagram } from 'react-icons/gr';
 
 
 const Sidebar = () => {
@@ -28,7 +29,8 @@ const Sidebar = () => {
            <li> <Link to="/blog"><FaBloggerB /> Blog</Link> </li>
             <li> <Link to="/contact"> <MdContactPhone />Contact</Link> </li>
         </ul>
-        <ul className="socials-icons">
+        <Socials />
+        {/* <ul className="socials-icons">
         <li>
           <a href="https://twitter.com/g_odofin"rel="noopener noreferrer" target="_blank"><FaTwitter /> </a>
           
@@ -50,7 +52,7 @@ const Sidebar = () => {
           <a href="https://www.instagram.com/g_odofin/" rel="noopener noreferrer" target="_blank"><GrInstagram /> </a>
           
         </li>
-        </ul>
+        </ul> */}
     </aside>
 }
 

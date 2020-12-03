@@ -16,6 +16,7 @@ const Landing = () => {
         <ul className=" mt-4"  >
         <li > <Link to="/contact" type="button" className="btn btn-outline-warning pl-4 pr-4">Hire Me</Link> </li>
         </ul>
+        
         <ul className="social-icons">
         <li className="p-2">
           <a href="mailto:odofing@gmail.com"rel="noopener noreferrer" target="_blank"><FiMail /> </a>

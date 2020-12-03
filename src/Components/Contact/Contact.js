@@ -1,8 +1,10 @@
 import React from 'react';
+import Socials from '../Socials';
 
 function Contact() {
     return (
-    <section className="mt-5 bg-green" >
+      <div>
+    <section className="mt-5" >
     <div className="container" >
       <div className="row " >
         <form action="/contact" method="post" name="contact" className="col-lg-12">
@@ -36,9 +38,13 @@ function Contact() {
                 </div>
             </div>
         </form>
+       
       </div>
       </div>
+      
   </section>
+  <Socials />
+  </div>
     )
 }
 
