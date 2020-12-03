@@ -15,8 +15,8 @@
       to right, rgb(209, 179, 12), rgb(218, 49, 7),  rgb(175, 164, 11));
     -webkit-background-clip: text;
     background-clip: text;
+    border: none;
     color: transparent;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   }

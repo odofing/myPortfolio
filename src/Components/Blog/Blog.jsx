@@ -17,13 +17,13 @@ const  Blog = () =>  {
 
 return (     <div className="row"> 
          <div className="col-md-6 m-auto" key={id}>
-           <div className="card border-warning mb-3 text-center">
-             <div className="card-header text-capitalize h3 text-dark">{title}</div>
-             <div className="card-body text-primary">
+           <div className="card border-warning mb-5 text-center">
+             <div className="card-header text-capitalize h3 text-dark bg-light">{title}</div>
+             <div className="card-body">
              <p className="card-text">{quote}</p>
-            <p>Reading Time:{readTime}</p>
+            <p>Reading Time: {readTime}</p>
             <a href={read} rel="noopener noreferrer" target="_blank" className="btn btn-outline-warning mr-5">Read Blog </a>
-          <a href={tweet} rel="noopener noreferrer" target="_blank"><FaTwitter style={{fontSize: '1.7rem'}}/> </a>
+          <a href={tweet} rel="noopener noreferrer" target="_blank">Tweet It<FaTwitter style={{fontSize: '2.5rem', paddingLeft: '10px',}}/> </a> 
              </div>
            </div>
            </div>

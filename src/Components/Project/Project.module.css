@@ -200,7 +200,7 @@ Variables
   .prev,
   .next {
     position: absolute;
-    top: 200px;
+    top: 250px;
     transform: translateY(-50%);
     background: var(--clr-light-gold);
     color: var(--clr-white);

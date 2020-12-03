@@ -19,12 +19,12 @@ Variables
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: hsl(208, 90%, 4%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: hsla(213, 5%, 45%, 0);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
@@ -152,15 +152,15 @@ main {
 }
 .sidebar-toggle {
   position: fixed;
-  top: 1rem;
+  top: 1.4rem;
   right: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-light-gold);
   transition: var(--transition);
   cursor: pointer;
-  /* animation: bounce 2s ease-in-out infinite; */
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .darkmode-toggle {
@@ -173,7 +173,7 @@ main {
   color: var(--clr-light-gold);
   transition: var(--transition);
   cursor: pointer;
-  /* animation: bounce 2s ease-in-out infinite; */
+  animation: bounce 2.5s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -195,9 +195,10 @@ Sidebar
 ===============
 */
 .sidebar-header {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+ justify-self: right;
   padding: 1rem 1.5rem;
   color: aqua;
 }
@@ -279,6 +280,7 @@ Sidebar
 .social-icons a:hover,
 .socials-icons a:hover {
   color: var(--clr-light-gold);
+  width: 100%;
 }
 
 .sidebar {
@@ -292,8 +294,8 @@ Sidebar
   row-gap: 1rem;
   transition: var(--transition);
   transform: translate(-100%);
-  background-color: var(--clr-white);
-  /* background-color: var(--clr-grey-9); */
+  background-color: grey;
+  /* background-color: var(--clr-grey-5); */
 }
 .show-sidebar {
   transform: translate(0);
@@ -301,11 +303,7 @@ Sidebar
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 300px;
-  }
-  /* .links a,
-  .links a svg {
-   justify-content: center;
-  } */
+  } 
 }
 
 article.activeSlide {

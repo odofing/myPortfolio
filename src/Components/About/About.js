@@ -43,15 +43,15 @@ const About = () =>  {
     <div className="row text-center">
  
             <div className="col-lg-12">
-           <button className="p-5 btn"> <SiHtml5 style={{color: 'red', fontSize: '2.4rem'}}/> <br/> <p className="lead pt-2 text-uppercase">html5</p> </button>
-            <button className="btn p-5"><GrReactjs style={{color: 'blue', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">react</p></button>
-       <button className="btn p-5"><AiFillGithub style={{color: 'grey', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">github</p> </button> 
-            <button className="btn p-5"><FaGit style={{color: 'red', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">git</p> </button>
+           <button className="p-3 btn"> <SiHtml5 style={{color: 'orangered', fontSize: '2.4rem'}}/> <br/> <p className="lead pt-3 text-uppercase">html5</p> </button>
+            <button className="btn p-5"><GrReactjs style={{color: 'black', padding: "2px", background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">react</p></button>
+       <button className="btn p-3"><AiFillGithub style={{color: 'grey', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">github</p> </button> 
+            <button className="btn p-3"><FaGit style={{color: 'red', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">git</p> </button>
 
-            <button className="btn p-5"><SiBootstrap style={{color: 'blue', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">bootstrap</p></button>
-            <button className="btn p-5">  <SiJavascript style={{color: 'orange', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">javascript</p></button>
-            <button className="btn p-5">  <DiCss3 style={{color: 'orange', fontSize: '2.4rem'}} /><br/> <p className="lead pt-2 text-uppercase">css3</p></button>
-            <button className="btn p-5"><DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> <p className="lead pt-2 text-uppercase">npm</p> </button>
+            <button className="btn p-3"><SiBootstrap style={{color: 'blue', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">bootstrap</p></button>
+            <button className="btn p-3">  <SiJavascript style={{color: 'orange', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">javascript</p></button>
+            <button className="btn p-3">  <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">css3</p></button>
+            <button className="btn p-3"><DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> <p className="lead pt-3 text-uppercase">npm</p> </button>
             </div>
       </div>
     </div>

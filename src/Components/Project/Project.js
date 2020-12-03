@@ -21,7 +21,7 @@ const Project = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    }, 4000);
+    }, 6000);
     return () => clearInterval(slider)
   }, [index])
 
@@ -52,8 +52,8 @@ const Project = () => {
                         <p className={classes.title}>{title}</p>
                         <p className={classes.text}>{quote}</p>
                         <div className="btn">
-                        <a href={source} type="button" className="btn btn-warning">Source Code</a>
-                         <a href={webpage} type="button" className="btn btn-warning ml-4 ">Webpage</a>
+                        <a href={source} type="button" className="btn btn-outline-warning ">Source Code</a>
+                         <a href={webpage} type="button" className="btn btn-outline-warning ml-4 ">Webpage</a>
                         </div>
                      </article>
                      )
