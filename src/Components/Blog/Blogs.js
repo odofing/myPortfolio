@@ -1,6 +1,16 @@
 const blogItems = [
+  {
+    id: 1,
+  readTime: "6 Minutes",
+    read: "https://odofing.hashnode.dev/spread-operator-vs-rest-operator",
+    title: 'Spread Operator and Rest Operator',
+    quote:
+      'In modern JavaScript, there are two important operators you should be aware of, they are the rest and the spread operators Let us start by talk about the spread operator...',
+
+      tweet:'https://twitter.com/share?url=https%3A%2F%2Fodofing.hashnode.dev%2Fspread-operator-vs-rest-operator&text=Spread%20Operator%20Vs%20Rest%20Operator%0D%0A%7B%20by%20Gbadamosi%20Odofin%20%7D%20from%20%40hashnode%0D%0A%0A%23javascript%20%23webdevelopment%20%23frontend%20%23es6',
+  },
     {
-      id: 1,
+      id: 2,
     readTime: "2 Minutes",
       read: "https://odofing.hashnode.dev/how-to-setup-bootstrap-in-your-react-project",
       title: 'How to setup Bootstrap in your React project',
