@@ -10,7 +10,7 @@ function Contact() {
         <form action="/contact" method="post" name="contact" className="col-lg-12">
         <input type="hidden" name="form-name" value="contact" />
           <div className="card p-4  bg-light">
-          <h3 className="card-title text-center text-warning">Get In Touch</h3>
+          <h2 className="card-title text-center text-warning">Get In Touch</h2>
             <div className="card-body">
               <div className="row">
                 <div className="col-lg-12">

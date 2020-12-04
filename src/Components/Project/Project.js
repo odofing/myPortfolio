@@ -33,7 +33,7 @@ const Project = () => {
             </div>
              <div  className={classes.sectionCenter}>
                  {people.map((person, personIndex) => {
-                     const {id, name, title, quote, image, webpage, source } = person;
+                     const {id, name, quote, image, webpage, source } = person;
 
                      let position = 'nextSlide';
                      if (personIndex === index) {

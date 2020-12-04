@@ -40,11 +40,6 @@ const About = () =>  {
     </tr>
 
     <tr>
-      <th scope="row">Age:</th>
-      <td>31</td>
-    </tr>
-
-    <tr>
       <th scope="row">Degree:</th>
       <td>M.Sc</td>
     </tr>
@@ -59,19 +54,8 @@ const About = () =>  {
       <td>Frontend Web Developer (React)</td>
     </tr>
 
-    <tr>
-      <th scope="row">Years of Experience:</th>
-      <td>5 years</td>
-    </tr>
-
-    {/* <tr>
-      <th scope="row">Work Mode:</th>
-      <td> Remote or On-site</td>
-    </tr> */}
-
   </tbody>
 </table>
-          {/* <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora ratione, sint excepturi quaerat ab eligendi temporibus repellendus inventore odit ex repellat obcaecati dolor harum amet vel animi minima debitis </p> */}
     
        <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1605792228/odofin_Gbadamosi_201120_nkxsw4.pdf"> View Résumé</a>  
           </div>
