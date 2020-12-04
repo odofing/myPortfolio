@@ -2,7 +2,7 @@ const blogItems = [
   {
     id: 1,
   readTime: "6 Minutes",
-    read: "https://odofing.hashnode.dev/spread-operator-vs-rest-operator",
+    read: "https://odofing.hashnode.dev/spread-operator-and-rest-operator",
     title: 'Spread Operator and Rest Operator',
     quote:
       'In modern JavaScript, there are two important operators you should be aware of, they are the rest and the spread operators Let us start by talk about the spread operator...',
