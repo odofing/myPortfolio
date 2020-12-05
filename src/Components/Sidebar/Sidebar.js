@@ -22,7 +22,7 @@ const Sidebar = () => {
         <FaTimes />
       </button>
     </div>
-    <ul className="links">
+    <ul className="links" onClick={closeSidebar}>
           <li> <Link to="/"> <FaHome /> Home</Link> </li>
           <li><Link to="/about"><FaUser /> About</Link></li>
            <li> <Link to="/projects"> <FaFolderOpen /> Projects</Link> </li>
@@ -30,29 +30,6 @@ const Sidebar = () => {
             <li> <Link to="/contact"> <MdContactPhone />Contact</Link> </li>
         </ul>
         <Socials />
-        {/* <ul className="socials-icons">
-        <li>
-          <a href="https://twitter.com/g_odofin"rel="noopener noreferrer" target="_blank"><FaTwitter /> </a>
-          
-        </li>
-        <li>
-          <a href="mailto:odofing@gmail.com"rel="noopener noreferrer" target="_blank"><FiMail /> </a>
-          
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/odofin-gbadamosi-414a1472/"rel="noopener noreferrer"target="_blank"><FaLinkedin /> </a>
-          
-        </li>
-        <li>
-          <a href="https://github.com/odofing"rel="noopener noreferrer" target="_blank"><FaGithub /> </a>
-          
-        </li>
-    
-        <li>
-          <a href="https://www.instagram.com/g_odofin/" rel="noopener noreferrer" target="_blank"><GrInstagram /> </a>
-          
-        </li>
-        </ul> */}
     </aside>
 }
 
