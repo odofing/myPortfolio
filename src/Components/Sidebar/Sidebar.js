@@ -26,7 +26,7 @@ const Sidebar = () => {
           <li> <Link to="/"> <FaHome /> Home</Link> </li>
           <li><Link to="/about"><FaUser /> About</Link></li>
            <li> <Link to="/projects"> <FaFolderOpen /> Projects</Link> </li>
-           <li> <Link to="/blog"><FaBloggerB /> Blog</Link> </li>
+           <li> <Link to="/blog"><FaBloggerB /> Blogs</Link> </li>
             <li> <Link to="/contact"> <MdContactPhone />Contact</Link> </li>
         </ul>
         <Socials />

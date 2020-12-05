@@ -21,10 +21,10 @@ return (     <div className="row">
              <div className="card-header text-capitalize h3 text-dark bg-warning">{title}</div>
              <div className="card-body">
              <p className="lead card-text">{quote}</p>
-             <div className="d-flex justify-content-between"> 
-            <p>Reading Time: {readTime}</p>
+             <p>Reading Time: {readTime}</p>
+             <div className="d-flex justify-content-around"> 
             <a href={read} rel="noopener noreferrer" target="_blank" className="btn btn-outline-warning text-center">Read Blog </a>
-          <a href={tweet} rel="noopener noreferrer" target="_blank">Tweet It<FaTwitter style={{fontSize: '2.5rem', paddingLeft: '10px',}}/> </a>  </div>
+          <a href={tweet} rel="noopener noreferrer" target="_blank">Tweet It<FaTwitter style={{fontSize: '2.5rem', padding: '10px'}}/> </a>  </div>
              </div>
            </div>
            </div>
