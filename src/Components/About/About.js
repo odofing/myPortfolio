@@ -2,7 +2,7 @@ import React from 'react';
 import { SiHtml5, SiJavascript } from 'react-icons/si';
 import { DiCss3, DiNpm  } from 'react-icons/di';
 import { GrReactjs } from 'react-icons/gr'
-import { SiBootstrap } from 'react-icons/si';
+import { SiBootstrap, SiRedux } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai'
 import { FaGit } from 'react-icons/fa';
 import classes from '../Project/Project.module.css';
@@ -57,7 +57,7 @@ const About = () =>  {
   </tbody>
 </table>
     
-       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1605792228/odofin_Gbadamosi_201120_nkxsw4.pdf"> View Résumé</a>  
+       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1607272034/ODOFIN_GBADAMOSI_LEKAN_061220_kqzyhc.pdf"> View Résumé</a>  
           </div>
         </div>
        
@@ -71,15 +71,41 @@ const About = () =>  {
     <div className="row text-center">
  
             <div className="col-lg-12">
-           <button className="p-3 btn"> <SiHtml5 style={{color: 'orangered', fontSize: '2.4rem'}}/> <br/> <p className="lead pt-3 text-uppercase">html5</p> </button>
-            <button className="btn p-5"><GrReactjs style={{color: 'black', padding: "2px", background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">react</p></button>
-       <button className="btn p-3"><AiFillGithub style={{color: 'grey', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">github</p> </button> 
-            <button className="btn p-3"><FaGit style={{color: 'red', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">git</p> </button>
+           <button className="p-3 btn"> 
+           <SiHtml5  style={{color: 'orangered', fontSize: '2.4rem'}}/> <br/>
+            <p className="lead pt-3 text-uppercase">html5</p> </button>
 
-            <button className="btn p-3"><SiBootstrap style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">bootstrap</p></button>
-            <button className="btn p-3">  <SiJavascript style={{color: 'orange', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">javascript</p></button>
-            <button className="btn p-3">  <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/> <p className="lead pt-3 text-uppercase">css3</p></button>
-            <button className="btn p-3"><DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> <p className="lead pt-3 text-uppercase">npm</p> </button>
+            <button className="btn p-5">
+              <GrReactjs  style={{color: 'black', padding: "2px", background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/>
+             <p className="lead pt-3 text-uppercase">react</p></button>
+
+       <button className="btn p-3">
+         <AiFillGithub   style={{color: 'grey', fontSize: '2.4rem'}} /><br/>
+        <p className="lead pt-3 text-uppercase">github</p> </button> 
+
+            <button className="btn p-3"><FaGit 
+            style={{color: 'red', fontSize: '2.4rem'}} /><br/>
+             <p className="lead pt-3 text-uppercase">git</p> </button>
+
+            <button className="btn p-3"><SiBootstrap 
+            style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/>
+             <p className="lead pt-3 text-uppercase">bootstrap</p></button>
+
+            <button className="btn p-3">  <SiJavascript 
+            style={{color: 'orange', fontSize: '2.4rem'}} /><br/> 
+            <p className="lead pt-3 text-uppercase">javascript</p></button>
+
+            <button className="btn p-3"> 
+             <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/>
+              <p className="lead pt-3 text-uppercase">css3</p></button>
+
+            <button className="btn p-3">
+              <DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> 
+              <p className="lead pt-3 text-uppercase">npm</p> </button>
+
+            {/* <button className="btn p-3">
+            <SiRedux style={{color: 'purple', fontSize: '2.4rem'}}/><br/>
+             <p className="lead pt-3 text-uppercase">Redux</p> </button> */}
             </div>
       </div>
     </div>
