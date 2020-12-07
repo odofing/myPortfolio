@@ -6,7 +6,7 @@ import data from './data';
 const Project = () => {
 
   const [people, setPeople] = useState(data);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = React.useState(0);
 
   useEffect (() => {
     const lastIndex = people.length - 1;
@@ -41,7 +41,7 @@ const Project = () => {
                      }
 
                      if (personIndex === index -1 || (index === 0 && personIndex === people.length - 1)) {
-                         position = 'lastIndex';
+                         position = 'lastSlide';
                      }
 
                      return (

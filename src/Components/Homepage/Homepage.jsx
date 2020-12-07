@@ -19,14 +19,13 @@ const Landing = () => {
         
         <ul className="social-icons">
         <li className="p-2">
-        <li className="p-2">
           <a href="https://twitter.com/g_odofin" rel="noopener noreferrer" target="_blank"><FaTwitter /> </a>
           
         </li>
-          <a href="mailto:odofing@gmail.com"rel="noopener noreferrer" target="_blank"><FiMail /> </a>
+        <li className="p-2">
+        <a href="mailto:odofing@gmail.com"rel="noopener noreferrer" target="_blank"><FiMail /> </a>
           
-        </li>
-        
+          </li>
         <li className="p-2">
           <a href="https://www.linkedin.com/in/odofin-gbadamosi-414a1472/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> </a>
           
