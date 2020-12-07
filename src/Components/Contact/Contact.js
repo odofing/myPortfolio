@@ -33,7 +33,7 @@ function Contact() {
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <button type="submit" className="btn btn-warning btn-block text-dark">SUBMIT </button>
+                    <button type="submit" className="btn btn-warning btn-block text-dark btn-lg">SUBMIT </button>
                   </div>
                 </div>
             </div>

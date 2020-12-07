@@ -21,7 +21,7 @@ const Project = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    }, 6000);
+    }, 8000);
     return () => clearInterval(slider)
   }, [index])
 
@@ -33,7 +33,7 @@ const Project = () => {
             </div>
              <div  className={classes.sectionCenter}>
                  {people.map((person, personIndex) => {
-                     const {id, name, quote, image, webpage, source } = person;
+                     const {id, name, quote, image, webpage, source, desc } = person;
 
                      let position = 'nextSlide';
                      if (personIndex === index) {
@@ -46,17 +46,18 @@ const Project = () => {
 
                      return (
                           <article className={position} key={id}>
+                          <h4 className="pb-3">{name}</h4>
                          <img src={image} alt={name} className={classes.personImg}/>
-                        
-                        <h4>{name}</h4>
+                         <p className="lead text-warning">{desc}</p>
                         <p className={classes.text}>{quote}</p>
-                        <div className="btn">
+                        <div className="btn pt-3">
                         <a href={source} type="button" className="btn btn-outline-warning ">Source Code</a>
                          <a href={webpage} type="button" className="btn btn-outline-warning ml-4 ">Webpage</a>
                         </div>
                      </article>
                      )
                  })}
+                
                  <button className={classes.prev} onClick={() => setIndex(index - 1)}> <FiChevronLeft /> </button>
                  <button className={classes.next} onClick={() => setIndex(index + 1)}> <FiChevronRight /></button>
              </div>
