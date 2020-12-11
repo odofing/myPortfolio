@@ -8,6 +8,7 @@ const blogItems = [
       'In modern JavaScript, there are two important operators you should be aware of, they are the rest and the spread operators Let us start by talk about the spread operator...',
 
       tweet:'https://twitter.com/share?url=https%3A%2F%2Fodofing.hashnode.dev%2Fspread-operator-vs-rest-operator&text=Spread%20Operator%20Vs%20Rest%20Operator%0D%0A%7B%20by%20Gbadamosi%20Odofin%20%7D%20from%20%40hashnode%0D%0A%0A%23javascript%20%23webdevelopment%20%23frontend%20%23es6',
+      whatsapp: 'https://api.whatsapp.com/send?text=Spread%20Operator%20and%20Rest%20Operator%20https%3A%2F%2Fodofing.hashnode.dev%2Fspread-operator-and-rest-operator',
   },
     {
       id: 2,
@@ -18,6 +19,7 @@ const blogItems = [
         'Bootstrap is a css framework that allows you to build fast, responsive mobile-first website. It is also the most popular css framework out there...',
 
         tweet:'https://twitter.com/share?url=https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-setup-bootstrap-in-your-react-project&text=How%20to%20setup%20Bootstrap%20in%20your%20React%20project%0D%0A%7B%20by%20Gbadamosi%20Odofin%20%7D%20from%20%40hashnode%0D%0A',
+        whatsapp: 'https://api.whatsapp.com/send?text=How%20to%20setup%20Bootstrap%20in%20your%20React%20project%20https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-setup-bootstrap-in-your-react-project',
     },
     {
         id: 2,
@@ -28,6 +30,7 @@ const blogItems = [
         'If you are new to frontend web development and you are looking for the easiest way to deploy your project, Github pages is your best bet. it is fast, simple, easy...',
   
           tweet: 'https://twitter.com/share?url=https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-create-github-pages-using-git-and-github&text=How%20to%20create%20Github%20pages%20using%20Git%20and%20Github%0D%0A%7B%20by%20Gbadamosi%20Odofin%20%7D%20from%20%40hashnode%0D%0A%0A%23github%20%23git%20%23webdevelopment%20%23frontend',
+          whatsapp: 'https://api.whatsapp.com/send?text=How%20to%20create%20Github%20pages%20using%20Git%20and%20Github%20https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-create-github-pages-using-git-and-github',
       },
   ];
   

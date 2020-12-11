@@ -1,6 +1,7 @@
 import React from 'react';
 import Blogs from './Blogs';
 import { FaTwitter } from 'react-icons/fa';
+import { ImWhatsapp } from 'react-icons/im';
 import classes from '../Project/Project.module.css';
 
 const  Blog = () =>  {
@@ -13,7 +14,7 @@ const  Blog = () =>  {
             </div>
      <div>
     {Blogs.map((blog) => {
-      const {id, title, quote, tweet, readTime, read} = blog;
+      const {id, title, quote, tweet, readTime, read, whatsapp} = blog;
 
 return (     <div className="row"> 
          <div className="col-md-5 m-auto" key={id}>
@@ -23,8 +24,9 @@ return (     <div className="row">
              <p className="lead card-text">{quote}</p>
              <p>Reading Time: {readTime}</p>
              <div className="d-flex justify-content-around"> 
+             <a href={whatsapp} rel="noopener noreferrer" target="_blank" className="text-success">Share It<ImWhatsapp style={{fontSize: '2.7rem', padding: '10px', color: 'green'}}/> </a>
             <a href={read} rel="noopener noreferrer" target="_blank" className="btn text-dark btn-outline-secondary text-center">Read Blog </a>
-          <a href={tweet} rel="noopener noreferrer" target="_blank">Tweet It<FaTwitter style={{fontSize: '2.5rem', padding: '10px'}}/> </a>  </div>
+          <a href={tweet} rel="noopener noreferrer" target="_blank">Tweet It<FaTwitter style={{fontSize: '2.7rem', padding: '10px'}}/> </a>  </div>
              </div>
            </div>
            </div>
