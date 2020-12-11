@@ -200,16 +200,16 @@ Variables
   .prev,
   .next {
     position: absolute;
-    top: 250px;
+    top: 270px;
     transform: translateY(-50%);
     background: var(--clr-light-gold);
     color: var(--clr-white);
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 2rem;
+    height: 2rem;
     display: grid;
     place-items: center;
     border-color: transparent;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: var(--radius);
     cursor: pointer;
     transition: var(--transition);
@@ -224,7 +224,7 @@ Variables
   .next {
     right: 0;
   }
-  @media (min-width: 800px) {
+  @media (max-width: 800px) {
     .text {
       max-width: 45em;
     }
