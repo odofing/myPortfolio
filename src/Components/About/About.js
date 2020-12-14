@@ -57,7 +57,7 @@ const About = () =>  {
   </tbody>
 </table>
     
-       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1607272553/ODOFIN_GBADAMOSI_LEKAN_061220_vvyhfq.pdf"> View Résumé</a>  
+       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1607937583/odofin_gbadamosi_14122020_ig4uik.pdf"> View Résumé</a>  
           </div>
         </div>
        
@@ -103,9 +103,9 @@ const About = () =>  {
               <DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> 
               <p className="lead pt-3 text-uppercase">npm</p> </button>
 
-            {/* <button className="btn p-3">
+            <button className="btn p-3">
             <SiRedux style={{color: 'purple', fontSize: '2.4rem'}}/><br/>
-             <p className="lead pt-3 text-uppercase">Redux</p> </button> */}
+             <p className="lead pt-3 text-uppercase">Redux</p> </button>
             </div>
       </div>
     </div>

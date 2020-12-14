@@ -16,7 +16,7 @@ const people = [
       'https://res.cloudinary.com/dy6qqzift/image/upload/v1605266740/Screenshot_40_g2jcll.png',
     name: 'Global Coronavirus Project',
     desc: "Project Description",
-    quote: 'This project summarizes the global Covid-19 in realtime. It was built with React, bootstrap and a javaScript third-party library, Axios.  ',
+    quote: 'This project summarizes the global Covid-19 in real-time. It was built with React, bootstrap and a javaScript third-party library, Axios.  ',
       source: "https://github.com/odofing/worldCovid19",
       webpage: "https://coronavirus-world-data.netlify.app/",
   },
