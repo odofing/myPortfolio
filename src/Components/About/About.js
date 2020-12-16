@@ -75,6 +75,14 @@ const About = () =>  {
            <SiHtml5  style={{color: 'orangered', fontSize: '2.4rem'}}/> <br/>
             <p className="lead pt-3 text-uppercase">html5</p> </button>
 
+            <button className="btn p-3"> 
+             <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/>
+              <p className="lead pt-3 text-uppercase">css3</p></button>
+
+              <button className="btn p-3"><SiBootstrap 
+            style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/>
+             <p className="lead pt-3 text-uppercase">bootstrap</p></button>
+
             <button className="btn p-5">
               <GrReactjs  style={{color: 'black', padding: "2px", background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/>
              <p className="lead pt-3 text-uppercase">react</p></button>
@@ -87,25 +95,18 @@ const About = () =>  {
             style={{color: 'red', fontSize: '2.4rem'}} /><br/>
              <p className="lead pt-3 text-uppercase">git</p> </button>
 
-            <button className="btn p-3"><SiBootstrap 
-            style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/>
-             <p className="lead pt-3 text-uppercase">bootstrap</p></button>
-
             <button className="btn p-3">  <SiJavascript 
             style={{color: 'orange', fontSize: '2.4rem'}} /><br/> 
             <p className="lead pt-3 text-uppercase">javascript</p></button>
 
-            <button className="btn p-3"> 
-             <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/>
-              <p className="lead pt-3 text-uppercase">css3</p></button>
 
             <button className="btn p-3">
               <DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> 
               <p className="lead pt-3 text-uppercase">npm</p> </button>
 
-            <button className="btn p-3">
+            {/* <button className="btn p-3">
             <SiRedux style={{color: 'purple', fontSize: '2.4rem'}}/><br/>
-             <p className="lead pt-3 text-uppercase">Redux</p> </button>
+             <p className="lead pt-3 text-uppercase">Redux</p> </button> */}
             </div>
       </div>
     </div>

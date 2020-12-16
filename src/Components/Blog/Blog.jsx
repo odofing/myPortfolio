@@ -19,7 +19,7 @@ const  Blog = () =>  {
 return (     <div className="row"> 
          <div className="col-md-5 m-auto" key={id}>
            <div className="card border-secondary mb-5 text-center">
-             <div className="card-header text-capitalize h3 text-dark bg-none">{title}</div>
+             <div className="card-header text-capitalize h3 text-dark  bg-warning">{title}</div>
              <div className="card-body">
              <p className="lead card-text">{quote}</p>
              <p>Reading Time: {readTime}</p>
