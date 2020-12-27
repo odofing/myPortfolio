@@ -5,9 +5,7 @@ import { FaTimes, FaHome, FaUser,
 import {  useGlobalContext } from '../context';
 import Socials from '../Socials';
 import { Link } from 'react-router-dom';
-// import { FiMail } from 'react-icons/fi';
-// import { FaGithub, FaLinkedin, FaTwitter,  } from 'react-icons/fa';
-//  import { GrInstagram } from 'react-icons/gr';
+
 
 
 const Sidebar = () => {

@@ -16,10 +16,10 @@ const  Blog = () =>  {
     {Blogs.map((blog) => {
       const {id, title, quote, tweet, readTime, read, whatsapp} = blog;
 
-return (     <div className="row"> 
-         <div className="col-md-5 m-auto" key={id}>
-           <div className="card border-secondary mb-5 text-center">
-             <div className="card-header text-capitalize h3 text-dark  bg-warning">{title}</div>
+return (     
+         <div className="col-md-6 m-auto" key={id}>
+           <div className="card mb-4 text-center shadow-lg">
+             <div className="card-header text-capitalize h3 text-dark  bg-warning ">{title}</div>
              <div className="card-body">
              <p className="lead card-text">{quote}</p>
              <p>Reading Time: {readTime}</p>
@@ -30,7 +30,7 @@ return (     <div className="row">
              </div>
            </div>
            </div>
-         </div>
+         
          
      ) })}
   </div>

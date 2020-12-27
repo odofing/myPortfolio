@@ -27,7 +27,7 @@ const Landing = () => {
           
           </li>
         <li className="p-2">
-          <a href="https://www.linkedin.com/in/odofin-gbadamosi-414a1472/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> </a>
+          <a href="https://www.linkedin.com/in/odofing" target="_blank" rel="noopener noreferrer"><FaLinkedin /> </a>
           
         </li>
         <li className="p-2">

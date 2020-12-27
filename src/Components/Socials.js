@@ -18,7 +18,7 @@ function Socials() {
           
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/odofin-gbadamosi-414a1472/"rel="noopener noreferrer"target="_blank"><FaLinkedin /> </a>
+          <a href="https://www.linkedin.com/in/odofing"rel="noopener noreferrer"target="_blank"><FaLinkedin /> </a>
           
         </li>
         <li>

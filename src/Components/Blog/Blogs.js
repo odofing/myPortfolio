@@ -31,7 +31,7 @@ const blogItems = [
   
           tweet: 'https://twitter.com/share?url=https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-create-github-pages-using-git-and-github&text=How%20to%20create%20Github%20pages%20using%20Git%20and%20Github%0D%0A%7B%20by%20Gbadamosi%20Odofin%20%7D%20from%20%40hashnode%0D%0A%0A%23github%20%23git%20%23webdevelopment%20%23frontend',
           whatsapp: 'https://api.whatsapp.com/send?text=How%20to%20create%20Github%20pages%20using%20Git%20and%20Github%20https%3A%2F%2Fodofing.hashnode.dev%2Fhow-to-create-github-pages-using-git-and-github',
-      },
+       }
   ];
   
   export default blogItems;
