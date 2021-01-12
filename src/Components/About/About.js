@@ -6,7 +6,6 @@ import { SiBootstrap, SiRedux } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai'
 import { FaGit } from 'react-icons/fa';
 import classes from '../Project/Project.module.css';
-import AboutImg from '../img/img1.png'
 
 
 const About = () =>  {
