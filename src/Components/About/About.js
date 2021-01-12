@@ -6,6 +6,7 @@ import { SiBootstrap, SiRedux } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai'
 import { FaGit } from 'react-icons/fa';
 import classes from '../Project/Project.module.css';
+import AboutImg from '../img/img1.png'
 
 
 const About = () =>  {
@@ -24,8 +25,7 @@ const About = () =>  {
       </div>
       <div className="col-md-7" id="about">
         <div className="card border-info mb-3 text-center">
-       
-          <div className="card-header text-capitalize h3 text-dark"> about</div>
+        <div className="card-header text-capitalize h3 text-dark"> about</div>
           <div className="card-body text-primary">
           <table class="table table-bordered">
   <tbody>
@@ -73,36 +73,36 @@ const About = () =>  {
             <div className="col-lg-12">
            <button className="p-3 btn"> 
            <SiHtml5  style={{color: 'orangered', fontSize: '2.4rem'}}/> <br/>
-            <p className="lead pt-3 text-uppercase">html5</p> </button>
+            <p className="lead pt-3 text-capitalize">html5</p> </button>
 
             <button className="btn p-3"> 
              <DiCss3 style={{color: 'rgb(45, 125, 230)', fontSize: '2.4rem'}} /><br/>
-              <p className="lead pt-3 text-uppercase">css3</p></button>
+              <p className="lead pt-3 text-capitalize">css3</p></button>
 
               <button className="btn p-3"><SiBootstrap 
             style={{background: 'white', color: 'rgb(66, 23, 116)', fontSize: '2.4rem'}} /><br/>
-             <p className="lead pt-3 text-uppercase">bootstrap</p></button>
+             <p className="lead pt-3 text-capitalize">bootstrap</p></button>
 
-            <button className="btn p-5">
-              <GrReactjs  style={{color: 'black', padding: "2px", background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/>
-             <p className="lead pt-3 text-uppercase">react</p></button>
+            <button className="btn p-3">
+              <GrReactjs  style={{color: 'black', background: 'rgb(39, 194, 194)', fontSize: '2.4rem'}} /><br/>
+             <p className="lead pt-3 text-capitalize">react</p></button>
 
        <button className="btn p-3">
          <AiFillGithub   style={{color: 'grey', fontSize: '2.4rem'}} /><br/>
-        <p className="lead pt-3 text-uppercase">github</p> </button> 
+        <p className="lead pt-3 text-capitalize">github</p> </button> 
 
             <button className="btn p-3"><FaGit 
             style={{color: 'red', fontSize: '2.4rem'}} /><br/>
-             <p className="lead pt-3 text-uppercase">git</p> </button>
+             <p className="lead pt-3 text-capitalize">git</p> </button>
 
             <button className="btn p-3">  <SiJavascript 
             style={{color: 'orange', fontSize: '2.4rem'}} /><br/> 
-            <p className="lead pt-3 text-uppercase">javascript</p></button>
+            <p className="lead pt-3 text-capitalize">javascript</p></button>
 
 
             <button className="btn p-3">
               <DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> 
-              <p className="lead pt-3 text-uppercase">npm</p> </button>
+              <p className="lead pt-3 text-capitalize">npm</p> </button>
 
             {/* <button className="btn p-3">
             <SiRedux style={{color: 'purple', fontSize: '2.4rem'}}/><br/>
