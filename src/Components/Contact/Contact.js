@@ -1,5 +1,6 @@
 import React from 'react';
 import Socials from '../Socials';
+import Footer from '../Footer/Footer';
 
 function Contact() {
     return (
@@ -44,6 +45,7 @@ function Contact() {
       
   </section>
   <Socials />
+  <Footer />
   </div>
     )
 }

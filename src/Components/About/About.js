@@ -2,10 +2,11 @@ import React from 'react';
 import { SiHtml5, SiJavascript } from 'react-icons/si';
 import { DiCss3, DiNpm  } from 'react-icons/di';
 import { GrReactjs } from 'react-icons/gr'
-import { SiBootstrap, SiRedux } from 'react-icons/si';
+import { SiBootstrap } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai'
 import { FaGit } from 'react-icons/fa';
 import classes from '../Project/Project.module.css';
+
 
 
 const About = () =>  {
@@ -50,7 +51,7 @@ const About = () =>  {
 
     <tr>
       <th scope="row">Role:</th>
-      <td>Frontend Web Developer (React)</td>
+      <td>Frontend Web Developer</td>
     </tr>
 
   </tbody>
@@ -102,13 +103,11 @@ const About = () =>  {
             <button className="btn p-3">
               <DiNpm style={{color: 'red', fontSize: '2.4rem'}}/><br/> 
               <p className="lead pt-3 text-capitalize">npm</p> </button>
-
-            {/* <button className="btn p-3">
-            <SiRedux style={{color: 'purple', fontSize: '2.4rem'}}/><br/>
-             <p className="lead pt-3 text-uppercase">Redux</p> </button> */}
             </div>
       </div>
+      
     </div>
+    
 </div>
         )
 }

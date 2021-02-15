@@ -3,11 +3,12 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import classes from './Project.module.css';
 import data from './data';
 
-const Project = () => {
 
+
+const Project = () => {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
-
+console.log(data)
   useEffect (() => {
     const lastIndex = people.length - 1;
     if (index < 0 ) {
@@ -33,7 +34,7 @@ const Project = () => {
             </div>
              <div  className={classes.sectionCenter}>
                  {people.map((person, personIndex) => {
-                     const {id, name, quote, image, webpage, source, desc } = person;
+                     const {id, name, tech, image, webpage, source} = person;
 
                      let position = 'nextSlide';
                      if (personIndex === index) {
@@ -48,8 +49,7 @@ const Project = () => {
                           <article className={position} key={id}>
                           <h4 className="pb-3">{name}</h4>
                          <img src={image} alt={name} className={classes.personImg}/>
-                         <p className="lead text-warning">{desc}</p>
-                        <p className={classes.text}>{quote}</p>
+                        <p className={classes.text}> <b> Tech Used:  </b> {tech}</p>
                         <div className="btn pt-3">
                         <a href={source} type="button" className="btn btn-outline-warning ">Source Code</a>
                          <a href={webpage} type="button" className="btn btn-outline-warning ml-4 ">Webpage</a>
@@ -63,6 +63,6 @@ const Project = () => {
              </div>
            </section>
         )
-    }
+                }
 export default Project;
 

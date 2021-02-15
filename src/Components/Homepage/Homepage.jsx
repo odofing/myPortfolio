@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import classes from './Homepage.module.css';
 import { FaGithub, FaLinkedin, FaTwitter,  } from 'react-icons/fa';
  import { GrInstagram } from 'react-icons/gr';
@@ -41,8 +42,9 @@ const Landing = () => {
         </li>
         </ul>
         </div>
-       
+        <Footer />
         </div>
+        
         
     )
 }
