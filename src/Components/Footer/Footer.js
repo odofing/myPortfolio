@@ -22,9 +22,9 @@ const Footer = () =>  {
      const year = date.getFullYear();
         console.log(year)
     return (
-        <div>
+        <div className={classes.foot}>
   <div className={classes.footer}>
-        <h6> <b> Happy {newDay}!  &copy; {year} </b> </h6>
+        <p> Happy {newDay}!  &copy; {year} </p>
       </div>
         </div>
     )

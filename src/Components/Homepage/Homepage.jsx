@@ -41,8 +41,9 @@ const Landing = () => {
           
         </li>
         </ul>
-        </div>
         <Footer />
+        </div>
+       
         </div>
         
         
