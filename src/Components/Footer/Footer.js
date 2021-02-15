@@ -24,7 +24,7 @@ const Footer = () =>  {
     return (
         <div className={classes.foot}>
   <div className={classes.footer}>
-        <p> Happy {newDay}!  &copy; {year} </p>
+        <small>Happy {newDay}! &copy; {year} </small>
       </div>
         </div>
     )
