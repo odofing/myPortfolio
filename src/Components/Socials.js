@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin, FaTwitter,  } from 'react-icons/fa';
 function Socials() {
     return (
         <div>
-             <ul className="socials-icons mt-4 font-weight-bold justify-content-center justify-content-lg-between">
+             <ul className="socials-icons mt-1 font-weight-bold justify-content-center justify-content-lg-between">
         <li>
           <a href="https://twitter.com/g_odofin"rel="noopener noreferrer" target="_blank"><FaTwitter /> </a>
           
