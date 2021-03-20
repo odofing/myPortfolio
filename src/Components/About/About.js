@@ -57,7 +57,7 @@ const About = () =>  {
   </tbody>
 </table>
     
-       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1608107294/odofin_gbadamosi_16122020_iqcwap.pdf"> View Résumé</a>  
+       <a className="btn btn-outline-warning ml-4" type="btn" href="https://res.cloudinary.com/dy6qqzift/image/upload/v1616255452/odofin_gbadamosi_20032021_z5kgjy.pdf"> View Résumé</a>  
           </div>
         </div>
        
